@@ -2,20 +2,11 @@
 # Com esses nomes, realizar uma ordenação crescente
 # uma função para facilitar a localização do nome na lista que será afixada no quadro de avisos da escola.
 
-nomes = []
+nomes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-for k in range(0,20):#laco de 20 iteracoes
+for i in range(20):
+    nomes[i]=str(input("digite o nome do aluno: "))
 
-    nome = input("Insira o "+ str(k+1) +"º nome >>" )
+sorted(str(nomes))
 
-nomes.append(nome)
-
-nomes.sort()
-
-print("==================")
-
-print("Lista de nomes ordenados:")
-
-for n in range(0,20):
-
-    print(str(n+1)+ "º nome >> " + nomes[n])
+print(sorted(nomes))
